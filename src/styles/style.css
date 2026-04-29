@@ -378,6 +378,12 @@ section {
 /* FOOTER ================================================== */
 .footer {
   text-align: center;
-  padding: 2rem;
-  opacity: 0.6;
+  padding: 1.2rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 3rem;
+  opacity: 0.7;
+}
+
+.footer p {
+  font-size: 0.85rem;
 }
