@@ -59,7 +59,7 @@
 
 html,body {
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 0.02em;
   background: var(--color-background);
 }
@@ -79,9 +79,10 @@ p, label, span {
   color: var(--color-text);
 }
 
-p {
-  max-width: 65ch;
+main h1, main h2, main p{
+  margin-bottom: 1rem;
 }
+
 
 input, textarea, select {
   font: var(--font-text);
@@ -126,15 +127,12 @@ section {
   padding: 6rem 2rem;
 }
 
-section h1 {
-  margin-bottom: 1rem;
-}
-
 /*============================================================*/
 /*General Classes Componets===================================*/
 
 /*button*/
 .btn{
+  display: inline-block;
   text-decoration: none;
   font: var(--font-text);
   color: #fff;
@@ -159,7 +157,6 @@ section h1 {
 }
 
 /* HERO ===================================================== */
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -362,21 +359,20 @@ section h1 {
 
 
 /* CONTACT ================================================== */
+.contact {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
 .contact__content {
   max-width: 600px;
   margin: 0 auto;
-}
-
-.contact p {
-  margin: 1rem 0 2rem;
-  opacity: 0.85;
-}
-
-.contact__actions {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--color-surface-1);
+  backdrop-filter: var(--blur);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 40px var(--color-shadow);
 }
 
 /* FOOTER ================================================== */
