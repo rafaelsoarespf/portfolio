@@ -26,10 +26,28 @@
 </head>
 
 <body>
-  <header></header>
+  <!--Navbar==================================================================-->
+  <header class="navbar">
+    <nav class="navbar__container" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo">Portfólio</a>
+
+      <!-- Navbar list -->
+      <ul class="navbar__list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <!-- Mobile button -->
+      <button class="navbar__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navbar-menu">☰</button>
+    </nav>
+  </header>
   <main>
     <!-- Hero ------------------------------------------------------------------------------>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero__content">
         <h1>Rafael Soares de Paula Filho</h1>
         <h2>Desenvolvedor Web</h2>
