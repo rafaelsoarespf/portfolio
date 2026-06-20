@@ -1,0 +1,409 @@
+/*============================================================*/
+/* Light =====================================================*/
+[data-theme="light"] {
+  --color-background: linear-gradient(135deg, #f5f5f5, #eaeaea);
+
+  --color-surface-1: rgba(255, 255, 255, 0.8);
+  --color-surface-2: #ffffff;
+
+  --color-title: #111111;
+  --color-subtitle: #2a2a2a;
+  --color-text: #444444;
+
+  --color-border: #d6d6d6;
+  --color-accent: #2563eb;
+  --color-on-accent: #fff;
+
+  --blur: blur(10px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.45rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/*============================================================*/
+/* Dark ======================================================*/
+[data-theme="dark"] {
+  --color-background: linear-gradient(135deg, #121212, #1e1e1e);
+  --color-surface-1: rgba(30, 30, 30, 0.8);
+  --color-surface-2: #262626;
+
+  --color-title: #ffffff;
+  --color-subtitle: #e0e0e0;
+  --color-text: #cccccc;
+
+  --color-border: #3a3a3a;
+  --color-accent: #3b82f6;
+  --color-on-accent: #fff;
+
+  --blur: blur(15px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.45rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.2);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/*============================================================*/
+/* Light Teal ================================================*/
+[data-theme="light-teal"] {
+  --color-background: linear-gradient(135deg, #EEF3F2, #DCE5E3);
+  --color-surface-1: #F7FAF9;
+  --color-surface-2: #E7EEEC;
+
+  --color-title: #1B2426;
+  --color-subtitle: #3F4B4D;
+  --color-text: #5E6A6C;
+
+  --color-border: #C8D3D1;
+  --color-accent: #3A6266;
+  --color-on-accent: #fff;
+
+  --blur: blur(10px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.08);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/*============================================================*/
+/* Dark Teal =================================================*/
+[data-theme="dark-teal"] {
+  --color-background: linear-gradient(135deg, #0E1114, #171C20);
+  --color-surface-1: #171C20;
+  --color-surface-2: #22282D;
+
+  --color-title: #F4F6F5;
+  --color-subtitle: #C8D0CE;
+  --color-text: #A3ADAB;
+
+  --color-border: #2F383D;
+  --color-accent: #3A6266;
+  --color-on-accent: #fff;
+
+  --blur: blur(14px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.18);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.28);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.38);
+}
+
+/*============================================================*/
+/* Aurora ====================================================*/
+[data-theme="aurora-light"] {
+  --color-background: linear-gradient(135deg, #EAF2FF, #DCE7F7);
+
+  --color-surface-1: rgba(255,255,255,0.55);
+  --color-surface-2: rgba(255,255,255,0.75);
+
+  --color-title: #162033;
+  --color-subtitle: #334155;
+  --color-text: #5B677A;
+
+  --color-border: rgba(120,140,180,0.18);
+  --color-accent: #7C9CFF;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(18px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 6px rgba(30,41,59,0.06);
+  --shadow-md: 0 8px 20px rgba(30,41,59,0.10);
+  --shadow-lg: 0 18px 40px rgba(30,41,59,0.14);
+}
+
+/*============================================================*/
+/* Aurora Dark ===============================================*/
+[data-theme="aurora-dark"] {
+  --color-background: linear-gradient(135deg,#03030A,#090B16);
+
+  --color-surface-1: rgba(255,255,255,0.04);
+  --color-surface-2: rgba(255,255,255,0.07);
+
+  --color-title: #F8FAFF;
+  --color-subtitle: #D6DEEA;
+  --color-text: #9FAEC2;
+
+  --color-border: rgba(124,156,255,0.15);
+
+  --color-accent: #8FA9FF;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(18px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.20);
+  --shadow-md: 0 8px 20px rgba(0,0,0,0.35);
+  --shadow-lg: 0 18px 40px rgba(0,0,0,0.55);
+}
+
+/*============================================================*/
+/* Coffee ====================================================*/
+
+[data-theme="coffee"] {
+  --color-background: linear-gradient(135deg, #D7C2AE, #BEA38A);
+
+  --color-surface-1: rgba(255,248,240,0.30);
+  --color-surface-2: rgba(255,248,240,0.45);
+
+  --color-title: #231A14;
+  --color-subtitle: #3A2D25;
+  --color-text: #5A4A40;
+
+  --color-border: rgba(90,70,55,0.15);
+  --color-accent: #8A5A3B;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(12px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(47,36,30,0.06);
+  --shadow-md: 0 4px 10px rgba(47,36,30,0.10);
+  --shadow-lg: 0 10px 30px rgba(47,36,30,0.16);
+}
+
+/*============================================================*/
+/* Paper =====================================================*/
+[data-theme="paper"] {
+  --color-background: #F7F4EC;
+
+  --color-surface-1: rgba(255,255,255,0.25);
+  --color-surface-2: rgba(255,255,255,0.40);
+
+  --color-title: #1F1F1F;
+  --color-subtitle: #3A3A3A;
+  --color-text: #5A5A5A;
+
+  --color-border: #D4CEC3;
+
+  --color-accent: #202020;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(2px);
+
+  --font-title: 700 2rem "Merriweather", Georgia, serif;
+  --font-subtitle: 500 1.4rem "Merriweather", Georgia, serif;
+  --font-text: 400 1rem Georgia, serif;
+  --font-text-sm: 400 0.875rem Georgia, serif;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 2px 6px rgba(0,0,0,0.05);
+  --shadow-lg: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/*============================================================*/
+/* Neumorphism ===============================================*/
+[data-theme="neumorphism"] {
+  --color-background: #E7EBF0;
+
+  --color-surface-1: #E7EBF0;
+  --color-surface-2: #E3E8EE;
+
+  --color-title: #2E3440;
+  --color-subtitle: #4C566A;
+  --color-text: #6B7280;
+
+  --color-border: transparent;
+
+  --color-accent: #8A94A6;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(0px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm:
+    2px 2px 4px rgba(163,177,198,0.25),
+    -2px -2px 4px rgba(255,255,255,0.9);
+
+  --shadow-md:
+    4px 4px 8px rgba(163,177,198,0.35),
+    -4px -4px 8px rgba(255,255,255,0.95);
+
+  --shadow-lg:
+    6px 6px 12px rgba(163,177,198,0.40),
+    -6px -6px 12px rgba(255,255,255,1);
+}
+
+/*============================================================*/
+/* Glass =====================================================*/
+[data-theme="glass"] {
+  --color-background:
+    radial-gradient(circle at 20% 20%, rgba(247, 252, 253, 0.55), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(254, 255, 255, 0.35), transparent 40%),
+    linear-gradient(135deg, #D9E7F4, #BFD3E8);
+
+  --color-surface-1: rgba(255,255,255,0.18);
+  --color-surface-2: rgba(255,255,255,0.30);
+
+  --color-title: #1E293B;
+  --color-subtitle: #475569;
+  --color-text: #64748B;
+
+  --color-border: rgba(255,255,255,0.55);
+
+  --color-accent: #8FB7E8;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(28px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(15,23,42,.04);
+  --shadow-md: 0 8px 20px rgba(15,23,42,.06);
+  --shadow-lg: 0 20px 40px rgba(15,23,42,.10);
+}
+
+/*============================================================*/
+/* Forest ===================================================*/
+[data-theme="forest"] {
+  --color-background: linear-gradient(135deg, #2E3D31, #435347);
+
+  --color-surface-1: rgba(255,255,255,0.05);
+  --color-surface-2: rgba(255,255,255,0.08);
+
+  --color-title: #F2F5F0;
+  --color-subtitle: #D5DDD2;
+  --color-text: #AAB7A7;
+
+  --color-border: rgba(181,211,177,0.10);
+
+  --color-accent: #7FA37F;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(14px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 4px rgba(0,0,0,.12);
+  --shadow-md: 0 4px 10px rgba(0,0,0,.22);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.34);
+}
+
+/*============================================================*/
+/* Nord =====================================================*/
+[data-theme="nord"] {
+  --color-background: linear-gradient(135deg, #A9B7C7, #D6DEE5);
+
+  --color-surface-1: rgba(255,255,255,0.22);
+  --color-surface-2: rgba(255,255,255,0.38);
+
+  --color-title: #24303D;
+  --color-subtitle: #455465;
+  --color-text: #67788A;
+
+  --color-border: rgba(70,90,110,0.15);
+
+  --color-accent: #5D84A2;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(18px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 6px rgba(20,30,40,0.05);
+  --shadow-md: 0 8px 20px rgba(20,30,40,0.10);
+  --shadow-lg: 0 18px 40px rgba(20,30,40,0.16);
+}
+
+/*============================================================*/
+/* Sakura ===================================================*/
+[data-theme="sakura"] {
+  --color-background: linear-gradient(135deg, #F8F1F4, #F3E8EC);
+
+  --color-surface-1: rgba(255,255,255,0.35);
+  --color-surface-2: rgba(255,255,255,0.55);
+
+  --color-title: #4A3640;
+  --color-subtitle: #6A5460;
+  --color-text: #8A7480;
+
+  --color-border: rgba(216,170,190,0.18);
+
+  --color-accent: #D8A3B6;
+  --color-on-accent: #FFFFFF;
+
+  --blur: blur(14px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 6px rgba(74,54,64,.05);
+  --shadow-md: 0 8px 20px rgba(74,54,64,.08);
+  --shadow-lg: 0 18px 40px rgba(74,54,64,.12);
+}
+
+
+/*============================================================*/
+/* Gold ======================================================*/
+[data-theme="gold"] {
+  --color-background: linear-gradient( 135deg,#b48a2e 0%,#d8b85f 45%,#b88f36 100%);
+
+  --color-surface-1: rgba(255,248,220,.14);
+  --color-surface-2: rgba(255,250,230,.22);
+
+  --color-title: #FFFDF6;
+  --color-subtitle: #F8EBC7;
+  --color-text: #FFF4D6;
+
+  --color-border: rgba(255,235,180,.28);
+
+  --color-accent: #FFE7A3;
+  --color-on-accent: #5A3900;
+
+  --blur: blur(18px);
+
+  --font-title: 700 2rem "Montserrat", Verdana, Helvetica, sans-serif;
+  --font-subtitle: 500 1.4rem "Roboto", Verdana, Helvetica, sans-serif;
+  --font-text: 400 1rem "Inter", Verdana, Helvetica, sans-serif;
+  --font-text-sm: 400 0.875rem "Inter", Verdana, Helvetica, sans-serif;
+
+  --shadow-sm: 0 2px 6px rgba(90,60,5,.08);
+  --shadow-md: 0 8px 18px rgba(90,60,5,.14);
+  --shadow-lg: 0 18px 35px rgba(90,60,5,.22);
+}

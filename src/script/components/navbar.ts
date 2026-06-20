@@ -1,7 +1,7 @@
 export function initNavbar() {
 
   const navbarToggle = document.querySelector<HTMLButtonElement>('.navbar__toggle');
-  const navbarList = document.querySelector<HTMLUListElement>('.navbar__list');
+  const navbarList = document.querySelector<HTMLUListElement>('.navbar__menu');
 
   if (navbarToggle && navbarList) {
     navbarToggle.addEventListener('click', () => {

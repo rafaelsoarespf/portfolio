@@ -1,0 +1,26 @@
+/*============================================================*/
+/* Reset =====================================================*/
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+img,picture,video,canvas,svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,input,textarea,select {
+  font: inherit;
+}
+
+

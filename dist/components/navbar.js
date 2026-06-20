@@ -1,6 +1,6 @@
 export function initNavbar() {
     const navbarToggle = document.querySelector('.navbar__toggle');
-    const navbarList = document.querySelector('.navbar__list');
+    const navbarList = document.querySelector('.navbar__menu');
     if (navbarToggle && navbarList) {
         navbarToggle.addEventListener('click', () => {
             navbarList.classList.toggle('active');
