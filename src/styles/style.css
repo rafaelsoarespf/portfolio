@@ -14,7 +14,7 @@
 
   --color-border: #333333;
   --color-shadow: rgba(0, 0, 0, 0.2);
-  --color-accent: #3b82f6; 
+  --color-accent: #335083; 
 
   --blur: blur(15px); /*backdrop-filter: var(--blur);*/
 
@@ -49,7 +49,7 @@ section {
 .projects__grid {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 2rem;
 }
 
@@ -86,7 +86,7 @@ section {
 .skills__grid {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
