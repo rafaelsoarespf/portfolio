@@ -14,7 +14,7 @@
 
   --color-border: #333333;
   --color-shadow: rgba(0, 0, 0, 0.2);
-  --color-accent: #335083; 
+  --color-accent: #366ac4; 
 
   --blur: blur(15px); /*backdrop-filter: var(--blur);*/
 
@@ -30,6 +30,10 @@ a:hover, button:hover {
 
 section {
   padding: 6rem 2rem;
+}
+
+.navbar__logo img{
+  width: 26px;
 }
 
 
