@@ -48,7 +48,6 @@
   --blur: blur(15px);
 }
 
-
 .card-img > img {
   object-fit: cover;
 }
