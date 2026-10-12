@@ -42,9 +42,9 @@
 </head>
 
 <body data-theme="portfolio">
-  <!--Scroll Progress=========================================================-->
+  <!--Scroll Progress ========================================================-->
   <div class="scroll-progress"></div>
-  <!--Navbar==================================================================-->
+  <!--Navbar =================================================================-->
   <header class="navbar">
     <nav class="navbar__content" aria-label="Main navigation">
       <a href="#hero" class="logo row"><img class src="src/assets/logo/diamond.png" alt="">Portfólio</a>
@@ -61,17 +61,62 @@
 
   <main>
     <!-- Hero ------------------------------------------------------------------------------>
-    <section id="hero" class="section-hero center gap-sm fx-glow-lg">
-      <h1 class="title-hero float width-600">Rafael Soares de Paula Filho</h1>
-      <h2 class="text-size-xl mb-sm slide-up">Desenvolvedor de Software</h2>
-      <p class="slide-up">Desenvolvimento <strong>•</strong> Arquitetura <strong>•</strong> Aprendizado Contínuo</p>
-      <p class="width-600 mt slide-up">Desenvolvo aplicações web, APIs e soluções completas, criando projetos próprios
-        para
-        aprender novas tecnologias e aplicar boas práticas de desenvolvimento.</p>
-      <div class="row mt slide-up">
-        <a href="#projects" class="btn">Ver projetos</a>
-        <a href="#contact" class="btn ghost">Contato</a>
+    <section id="hero" class="section-hero  center-items fx-petals parallax">
+      <div class="container grid fx-glow-lg">
+        <!--Informations-->
+        <div class="col-7 slide-left column">
+          <span class="badge">Desenvolvimento | Arquitetura | Aprendizado Contínuo</span>
+          <h1 class="title-hero float">Rafael Soares de Paula Filho</h1>
+          <h2 class="text-size-xl text-writer mb-sm slide-up"
+            data-words="Desenvolvedor de Software,Segurança Cibernética,Arquitetura de Software">Desenvolvedor de
+            Software | Segurança Cibernética</h2>
+          <span class="accent-stroke"></span>
+          <p class="width-600 mt slide-up">
+            Desenvolvo aplicações web, APIs e soluções completas, criando projetos próprios
+            para aprender novas tecnologias e aplicar boas práticas de desenvolvimento.
+          </p>
+          <div class="row mt slide-up">
+            <a href="#projects" class="btn hover-shine">Ver projetos</a>
+            <a href="#contact" class="btn ghost">Contato</a>
+          </div>
+        </div>
+        <!--card-->
+        <div class="slide-right center-self">
+          <div class="card liquid-glass border-neon hover-incline column fx-petals parallax">
+            <div class="row center-items">
+              <span class="avatar" aria-hidden="true">✦</span>
+              <div>
+                <h3>Rafael Soares de Paula Filho</h3>
+                <p>Desenvolvedor de Software | Cibersegurança</p>
+              </div>
+            </div>
+            <!--badge-->
+            <span class="badge bg-green">Aberto a oportunidades</span>
+            <div>
+              <span class="text-overline">Graduação</span>
+              <p>Análise e Desenvolvimento de Sistemas</p>
+            </div>
+            <div>
+              <span class="text-overline">Pós-graduação</span>
+              <p>Segurança Cibernética (em andamento)</p>
+            </div>
+            <!--btns-->
+            <div class="row gap-sm">
+              <a class="btn liquid-glass" href="">Email</a>
+              <a class="btn liquid-glass" href="" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn liquid-glass" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn liquid-glass" href="" target="_blank" rel="noopener noreferrer">Currículo</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--arrow-->
+      <a class="position-b" href="#about" aria-label="Ir para a seção Sobre mim">
+        <svg class="float" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </a>
     </section>
 
     <!-- About -------------------------------------------------------------->
@@ -138,7 +183,8 @@
 
         <!-- Dashboard Financeiro -->
         <article class="col-4 card-img hover-lift">
-          <img class="height-250" src="./src/assets/projects/financial-dashboard.gif" alt="Dashboard Financeiro" loading="lazy">
+          <img class="height-250" src="./src/assets/projects/financial-dashboard.gif" alt="Dashboard Financeiro"
+            loading="lazy">
           <h3 class="mt">Dashboard Financeiro</h3>
           <p>Um painel financeiro moderno e responsivo construído com React, TypeScript, Recharts e Aurora CSS.</p>
           <div class="row gap-sm">

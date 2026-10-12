@@ -61,6 +61,18 @@
   width: 26px;
 }
 
+/* HERO ===================================================== */
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), color-mix(in srgb, var(--color-accent) 50%, black));
+  color: var(--color-on-accent);
+  font: 700 1.25rem "Sora", sans-serif;
+}
 
 /* SKILLS =================================================== */
 .tags {
@@ -84,3 +96,4 @@
   height: 19px;
   filter: brightness(0) invert(0.9);
 }
+
