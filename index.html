@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="portfolio">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,12 +19,22 @@
 
   <!--Favicon-->
   <link rel="shortcut icon" href="src/assets/logo/diamond.png" type="image/x-icon" />
-  <!--Aurora-->
-  <link rel="stylesheet" href="./src/vendor/aurora/reset.css">
-  <link rel="stylesheet" href="./src/vendor/aurora/globals.css">
-  <link rel="stylesheet" href="./src/vendor/aurora/classes.css">
-  <link rel="stylesheet" href="./src/vendor/aurora/themes.css">
-  <script type="module" src="./src/vendor/aurora/aurora.js" defer></script>
+  <!-- Celestial Flow -->
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/fonts.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/reset.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/themes.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/globals.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/layout.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/spacing.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/typography.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/components.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/forms.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/overlays.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/structure.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/decorative.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/appearance.css" />
+  <link rel="stylesheet" href="./vendor/celestial-flow/css/animations.css" />
+  <script src="./vendor/celestial-flow/js/celestial-flow.js" defer></script>
   <!--CSS-->
   <link rel="stylesheet" href="./src/styles/style.css" type="text/css" />
   <!--Javascript-->
@@ -35,8 +45,8 @@
   <!--Navbar==================================================================-->
   <header class="navbar">
     <nav class="navbar__content" aria-label="Main navigation">
-      <a href="#hero" class="navbar__logo row center-items gap-sm"><img class src="src/assets/logo/diamond.png" alt="">Portfólio</a>
-      <ul class="navbar__menu">
+      <a href="#hero" class="logo row"><img class src="src/assets/logo/diamond.png" alt="">Portfólio</a>
+      <ul class="navbar__menu" id="navbar-menu">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">Sobre mim</a></li>
         <li><a href="#projects">Projetos</a></li>
@@ -49,21 +59,22 @@
 
   <main>
     <!-- Hero ------------------------------------------------------------------------------>
-    <section id="hero" class="hero center gap-sm fx-glow-lg">
-      <h1 class="float font-3xl">Rafael Soares de Paula Filho</h1>
-      <h2 class="mb-sm">Desenvolvedor de Software</h2>
-      <p>Desenvolvimento <strong>•</strong> Arquitetura <strong>•</strong> Aprendizado Contínuo</p>
-      <p class="mt width-600">Desenvolvo aplicações web, APIs e soluções completas, criando projetos próprios para
+    <section id="hero" class="section-hero center gap-sm fx-glow-lg">
+      <h1 class="title-hero float width-600">Rafael Soares de Paula Filho</h1>
+      <h2 class="text-size-xl mb-sm slide-up">Desenvolvedor de Software</h2>
+      <p class="slide-up">Desenvolvimento <strong>•</strong> Arquitetura <strong>•</strong> Aprendizado Contínuo</p>
+      <p class="width-600 mt slide-up">Desenvolvo aplicações web, APIs e soluções completas, criando projetos próprios
+        para
         aprender novas tecnologias e aplicar boas práticas de desenvolvimento.</p>
-      <div class="row mt">
+      <div class="row mt slide-up">
         <a href="#projects" class="btn">Ver projetos</a>
         <a href="#contact" class="btn ghost">Contato</a>
       </div>
     </section>
 
     <!-- About -------------------------------------------------------------->
-    <section id="about" class="center container width-650">
-      <h1 class="">Sobre mim</h1>
+    <section id="about" class="section center width-600">
+      <h2 class="mb">Sobre mim</h2>
       <p class="mt">
         Sou Desenvolvedor de Software, formado em Análise e Desenvolvimento de Sistemas e pós-graduando em Segurança
         Cibernética.
@@ -79,142 +90,136 @@
       </p>
     </section>
 
-    <!-- projects ------------------------------------------------------------------------------>
-    <section id="projects" class="container">
-      <h1>Projetos</h1>
-      <div class="projects__grid">
+    <!-- Projects ------------------------------------------------------------------------------>
+    <section id="projects" class="section container">
+      <h2 class="mb-lg">Projetos</h2>
 
-        <!--aurora css-->
-        <article class="card-img">
-          <img src="src/assets/projects/aurora-css.png" alt="Aurora CSS">
-          <h2 class="mt">Aurora CSS</h2>
+      <div class="grid slide-up">
+        <!-- Celestial Flow -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/celestial-flow.png" alt="Celestial Flow" loading="lazy">
+          <h3 class="mt">Celestial Flow</h3>
           <p>
-            Um framework CSS projetado com base em uma arquitetura orientada a temas, permitindo que as interfaces adaptem
-            sua identidade visual sem alterar sua estrutura.
+            Um framework projetado com base em uma arquitetura orientada a temas, permitindo que as interfaces
+            adaptem sua identidade visual sem alterar sua estrutura.
           </p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">CSS</span>
-            <span class="">Framework</span>
-            <span class="">JavaScript</span>
-          </div>
-
           <div class="row gap-sm">
-            <a class="btn" href="https://rafaelsoarespf.github.io/aurora-css/" target="_blank">Ver</a>
-            <a class="btn" href="https://rafaelsoarespf.github.io/aurora-css/docs/pages/docs/index.html" target="_blank">Ver Documentação</a>
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/aurora-css" target="_blank">Código</a>
+            <span class="badge">CSS</span>
+            <span class="badge">Framework</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="row bottom left">
+            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Ver</a>
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
-        <!--music player-->
-        <article class="card-img">
-          <img src="src/assets/projects/music-player.gif" alt="Music Player">
-          <h2 class="mt">Music Player</h2>
+        <!-- Music Player -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/music-player.gif" alt="Music Player" loading="lazy">
+          <h3 class="mt">Music Player</h3>
           <p>
             Um reprodutor de música moderno e interativo desenvolvido com TypeScript, focado em arquitetura limpa,
             interação dinâmica com áudio e uma experiência de usuário refinada.
           </p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">HTML</span>
-            <span class="">CSS</span>
-            <span class="">TypeScript</span>
-            <span class="">JSON</span>
-          </div>
-
           <div class="row gap-sm">
-            <a class="btn" href="https://rafaelsoarespf.github.io/music-player/" target="_blank">Ver</a>
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/music-player" target="_blank">Código</a>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">JSON</span>
+          </div>
+          <div class="row gap-sm bottom left">
+            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Ver</a>
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
-        <!--financeiro-dashboard-->
-        <article class="card-img">
-          <img src="src/assets/projects/financial-dashboard.gif" alt="financial dashboard">
-          <h2 class="mt">Dashboard Financeiro</h2>
+        <!-- Dashboard Financeiro -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/financial-dashboard.gif" alt="Dashboard Financeiro" loading="lazy">
+          <h3 class="mt">Dashboard Financeiro</h3>
           <p>Um painel financeiro moderno e responsivo construído com React, TypeScript, Recharts e Aurora CSS.</p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">HTML</span>
-            <span class="">Aurora CSS</span>
-            <span class="">TypeScript</span>
-            <span class="">React</span>
-            <span class="">Vite</span>
-            <span class="">Recharts</span>
-            <span class="">Lucide React</span>
-          </div>
-
           <div class="row gap-sm">
-            <a class="btn" href="https://rafaelsoarespf.github.io/financial-dashboard/" target="_blank">Ver</a>
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/financial-dashboard" target="_blank">Código</a>
+            <span class="badge">HTML</span>
+            <span class="badge">Aurora CSS</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Vite</span>
+            <span class="badge">Recharts</span>
+            <span class="badge">Lucide React</span>
+          </div>
+          <div class="row gap-sm bottom left">
+            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Ver</a>
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
-        <!--ghost navbar-->
-        <article class="card-img">
-          <img src="src/assets/projects/ghost-navbar.gif" alt="Preview Ghost Navbar">
-          <h2 class="mt">Ghost Navbar</h2>
+        <!-- Ghost Navbar -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/ghost-navbar.gif" alt="Ghost Navbar" loading="lazy">
+          <h3 class="mt">Ghost Navbar</h3>
           <p>
-            Ocultação automática da barra de navegação do Firefox criada com
-            userChrome.css, apresentando transições suaves e revelação baseada
-            em foco.
+            Ocultação automática da barra de navegação do Firefox criada com userChrome.css, apresentando transições
+            suaves e revelação baseada em foco.
           </p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">CSS</span>
-            <span class="">Firefox</span>
-            <span class="">UI</span>
-          </div>
-
           <div class="row gap-sm">
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/firefox-autohide-navbar"
-              target="_blank">Código</a>
+            <span class="badge">CSS</span>
+            <span class="badge">Firefox</span>
+            <span class="badge">UI</span>
+          </div>
+          <div class="row gap-sm bottom left">
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
-        <!--themes-->
-        <article class="card-img">
-          <img src="src/assets/projects/themes.gif" alt="portfolio">
-          <h2 class="mt">Temas</h2>
-          <p>Um aplicativo web interativo para criar e visualizar temas de interface personalizados usando HTML, CSS, JavaScript e Bootstrap.</p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">HTML</span>
-            <span class="">CSS</span>
-            <span class="">Bootstrap</span>
-            <span class="">JavaScript</span>
-          </div>
-
+        <!-- Temas -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/themes.gif" alt="Temas" loading="lazy">
+          <h3 class="mt">Temas</h3>
+          <p>
+            Um aplicativo web interativo para criar e visualizar temas de interface personalizados usando HTML, CSS,
+            JavaScript e Bootstrap.
+          </p>
           <div class="row gap-sm">
-            <a class="btn" href="https://rafaelsoarespf.github.io/themes/" target="_blank">Ver</a>
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/themes" target="_blank">Código</a>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">Bootstrap</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <div class="row gap-sm bottom left">
+            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Ver</a>
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
-        <!--portfólio-->
-        <article class="card-img">
-          <img src="src/assets/projects/portfólio.png" alt="portfolio">
-          <h2 class="mt">Portfólio</h2>
+        <!-- Portfólio -->
+        <article class="col-4 card-img hover-lift">
+          <img class="height-250" src="./src/assets/projects/portfolio.png" alt="Portfólio" loading="lazy">
+          <h3 class="mt">Portfólio</h3>
           <p>
             Portfólio pessoal que apresenta projetos, experimentos e trabalhos técnicos em diversas áreas. Focado em
             soluções limpas, implementação prática e aprendizado contínuo.
           </p>
-          <div class="row gap-sm project-card__tags">
-            <span class="">HTML</span>
-            <span class="">Aurora CSS</span>
-            <span class="">TypeScript</span>
-          </div>
-
           <div class="row gap-sm">
-            <a class="btn ghost" href="https://github.com/rafaelsoarespf/portfolio" target="_blank">Código</a>
+            <span class="badge">HTML</span>
+            <span class="badge">Celestial Flow</span>
+            <span class="badge">TypeScript</span>
+          </div>
+          <div class="row gap-sm bottom left">
+            <a class="btn-outline" href="#" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- skills ------------------------------------------------------------------------------>
-    <section id="skills" class="skills container">
-      <h1>Habilidades</h1>
+    <section id="skills" class="section container">
+      <h2 class="mb-lg">Habilidades</h2>
 
-      <div class="skills__grid">
+      <div class="grid slide-up">
         <!-- Frontend -->
-        <div class="card">
-          <h2>Frontend</h2>
+        <div class="card hover-lift">
+          <h3>Frontend</h3>
           <div class="tags gap-sm">
             <span class="tag gap-sm"><img src="src/assets/icons/html5.svg" alt="HTML" />HTML</span>
             <span class="tag gap-sm"><img src="src/assets/icons/css.svg" alt="CSS" />CSS</span>
@@ -227,8 +232,8 @@
         </div>
 
         <!-- Backend -->
-        <div class="card">
-          <h2>Backend</h2>
+        <div class="card hover-lift">
+          <h3>Backend</h3>
           <div class="tags gap-sm">
             <span class="tag gap-sm"><img src="src/assets/icons/nodejs.svg" alt="Node.js" />Node.js</span>
             <span class="tag gap-sm"><img src="src/assets/icons/express.svg" alt="Express" />Express</span>
@@ -239,20 +244,20 @@
         </div>
 
         <!-- Tools -->
-        <div class="card">
-          <h2>Ferramentas / CMS</h2>
+        <div class="card hover-lift">
+          <h3>Ferramentas / CMS</h3>
           <div class="tags gap-sm">
             <span class="tag gap-sm"><img src="src/assets/icons/git.svg" alt="Git" />Git</span>
             <span class="tag gap-sm"><img src="src/assets/icons/github.svg" alt="GitHub" />GitHub</span>
             <span class="tag gap-sm"><img src="src/assets/icons/markdown.svg" alt="Markdown" />Markdown</span>
-            <span class="tag gap-sm"><img src="src/assets/icons/wordpress.svg" alt="Wordpress" />Wordpress</span>
-            <span class="tag gap-sm"><img src="src/assets/icons/woocommerce.svg" alt="Woocomerce" />Woocomerce</span>
+            <span class="tag gap-sm"><img src="src/assets/icons/wordpress.svg" alt="WordPress" />WordPress</span>
+            <span class="tag gap-sm"><img src="src/assets/icons/woocommerce.svg" alt="WooComerce" />WooComerce</span>
           </div>
         </div>
 
         <!-- Database -->
-        <div class="card">
-          <h2>Banco de dados</h2>
+        <div class="card hover-lift">
+          <h3>Banco de dados</h3>
           <div class="tags gap-sm">
             <span class="tag gap-sm"><img src="src/assets/icons/mysql.svg" alt="MySQL" />MySQL</span>
             <span class="tag gap-sm"><img src="src/assets/icons/postgresql.svg" alt="PostgreSQL" />PostgreSQL</span>
@@ -263,22 +268,22 @@
     </section>
 
     <!-- contact ------------------------------------------------------------------------------>
-    <section id="contact" class="container center">
+    <section id="contact" class="section container center">
       <div class="card width-600">
-        <h1>Contato</h1>
+        <h2>Contato</h2>
         <p>Estou em busca de oportunidades e sempre aberto a conversar sobre tecnologia, projetos e novas ideias.</p>
         <div class="row center-items mt mb">
-          <a href="mailto:email@gmail.com" class="btn">Email</a>
-          <a href="https://github.com/rafaelsoarespf" target="_blank" class="btn ghost">GitHub</a>
-          <a href="https://www.linkedin.com/in/rafael-soares-de-paula-filho-89a8321b4/" target="_blank"
-            class="btn ghost">LinkedIn</a>
+          <a href="" class="btn">Email</a>
+          <a href="" target="_blank" class="btn ghost">GitHub</a>
+          <a href="" target="_blank" class="btn ghost">LinkedIn</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- footer ------------------------------------------------------------------------------>
   <footer class="footer">
-    <p class="center-self">© 2026 Rafael Soares de Paula Filho — Criado com Aurora CSS, HTML e TypeScript</p>
+    <p class="center-self">© 2026 Rafael Soares de Paula Filho— Criado com Celestial Flow, HTML e TypeScript</p>
   </footer>
 </body>
 
