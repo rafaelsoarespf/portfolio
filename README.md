@@ -11,10 +11,12 @@
 
 <br>
 
-Link: [https://rafaelsoarespf.github.io/portfolio](https://rafaelsoarespf.github.io/portfolio)
+
 <img src="./src/assets/readme/preview.gif" alt="Portfolio preview" width="860">
 
 </div>
+
+ 🔗Link: [https://rafaelsoarespf.github.io/portfolio](https://rafaelsoarespf.github.io/portfolio)
 
 ---
 
