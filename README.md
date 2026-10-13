@@ -5,12 +5,13 @@
 **Software developer portfolio: projects, experiments, and continuous learning.**<br>
 **Portfólio de desenvolvedor de software: projetos, experimentos e aprendizado contínuo.**
 
-[Site](https://rafaelsoarespf.github.io/portfolio) · [LinkedIn](www.linkedin.com/in/rafael-soares-de-paula-filho) · [Email](mailto:rafaelsoares.p.f.work@gmail.com)
+[Site](https://rafaelsoarespf.github.io/portfolio) · [Email](mailto:rafaelsoares.p.f.work@gmail.com)
 
 [🇺🇸 English](#english) · [🇧🇷 Português](#portugues)
 
 <br>
 
+Link: [https://rafaelsoarespf.github.io/portfolio](https://rafaelsoarespf.github.io/portfolio)
 <img src="./src/assets/readme/preview.gif" alt="Portfolio preview" width="860">
 
 </div>
@@ -55,7 +56,6 @@ portfolio/
 
 ### Contact
 
-- **LinkedIn:** [www.linkedin.com/in/rafael-soares-de-paula-filho](www.linkedin.com/in/rafael-soares-de-paula-filho)
 - **GitHub:** [https://github.com/rafaelsoarespf](https://github.com/rafaelsoarespf)
 - **Email:** [rafaelsoares.p.f.work@gmail.com](mailto:rafaelsoares.p.f.work@gmail.com)
 
@@ -103,7 +103,6 @@ portfolio/
 
 ### Contato
 
-- **LinkedIn:** [www.linkedin.com/in/rafael-soares-de-paula-filho](www.linkedin.com/in/rafael-soares-de-paula-filho)
 - **GitHub:** [https://github.com/rafaelsoarespf](https://github.com/rafaelsoarespf)
 - **Email:** [rafaelsoares.p.f.work@gmail.com](mailto:rafaelsoares.p.f.work@gmail.com)
 
