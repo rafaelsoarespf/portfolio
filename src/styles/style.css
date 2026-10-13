@@ -56,6 +56,44 @@
   gap: 5px;
 }
 
+/* WHASTSAPP BTN ============================================ */
+  .whatsapp-btn {
+    position: fixed;
+    right: max(1.25rem, env(safe-area-inset-right));
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
+    z-index: 90;
+    display: grid;
+    place-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    box-shadow: var(--shadow-lg);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+ 
+  .whatsapp-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+ 
+  .whatsapp-btn:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+ 
+  .whatsapp-btn svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: currentColor;
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .whatsapp-btn { transition: none; }
+    .whatsapp-btn:hover { transform: none; }
+  }
+
+
 /* NAVBAR =================================================== */
 .logo img{
   width: 26px;
